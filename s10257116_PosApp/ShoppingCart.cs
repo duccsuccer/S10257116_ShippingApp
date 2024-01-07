@@ -8,19 +8,19 @@ namespace PosApp
 {
     internal class ShoppingCart
     {
-        public List<CartItem> Itemlist { get; set; } = new();
+        public List<CartItem> itemList { get; set; } = new();
         public ShoppingCart() { }
         public void AddItem(CartItem item) 
         { 
-            Itemlist.Add(item);
+            itemList.Add(item);
         }
         public List<CartItem> GetItemList()
         {
-            return Itemlist;
+            return itemList;
         }
         public bool RemoveItem(int qty) 
         { 
-            foreach (CartItem item in Itemlist)
+            foreach (CartItem item in itemList)
             {
                 if (item.Qty < qty)
                 {
@@ -31,12 +31,12 @@ namespace PosApp
             return true;
         }
         public void ClearCart()
-        { Itemlist.Clear(); }
+        { itemList.Clear(); }
         public int Size()
-        { return Itemlist.Count; }
+        { return itemList.Count; }
         public bool IsEmpty()
         { 
-            if(Itemlist.Count > 0)
+            if(itemList.Count > 0)
             {
                 return false;
             }
