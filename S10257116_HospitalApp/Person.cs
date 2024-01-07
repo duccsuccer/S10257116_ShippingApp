@@ -18,7 +18,7 @@ namespace S10257116_HospitalApp
         }
         public override string ToString()
         {
-            return $"NRIC: {Nric}, Name: {Name}";
+            return $"NRIC: {Nric}, Name: {Name},";
         }
     }
 }

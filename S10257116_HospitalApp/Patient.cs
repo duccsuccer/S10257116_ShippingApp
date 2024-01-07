@@ -14,5 +14,10 @@ namespace S10257116_HospitalApp
         {
             WardedAt = wardedat;
         }
+        public override string ToString()
+        {
+            return base.ToString() + $" Warded At: {WardedAt}";
+        }
     }
+    
 }

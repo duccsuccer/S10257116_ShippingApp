@@ -18,7 +18,7 @@ namespace S10257116_HospitalApp
         }
         public override string ToString()
         {
-            return $"Location: {Location}, Ward Clas: {WardClass}";
+            return $"Location: {Location}, Ward Class: {WardClass}";
         }
     }
 }
